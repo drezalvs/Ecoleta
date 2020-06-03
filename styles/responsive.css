@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     #page-home {
         background-position-x: 70vw;
     }
@@ -9,8 +9,9 @@
     }
 
     #page-home header a {
+        width: 80%;
         position: absolute;
-        bottom: 48px;
+        bottom: 15px;
         left: 50%;
         transform: translateX(-50%)
 
@@ -18,6 +19,20 @@
 
     #page-home main {
         align-items: center;
+    }
+
+    #page-home main h1 {
+        font-size: 32px;
+    }
+
+    #page-home main p {
+        line-height: 25px;
+        font-size: 18px;
+    }
+
+    #page-home main a {
+       width: 80%;
+       font-size: 13px;
     }
 
     #page-search-results .cards {
