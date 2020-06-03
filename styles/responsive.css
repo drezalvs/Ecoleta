@@ -20,9 +20,9 @@
         align-items: center;
     }
 
-   /* h1, p {
-        text-align: center;
-    }*/
+    #page-search-results .cards {
+        grid-template-columns: 1fr;
+    }
 
     img {
         align-items: center;
