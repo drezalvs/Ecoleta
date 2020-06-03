@@ -1,0 +1,49 @@
+:root {
+    --title-color: #322153;
+    --primary-color: #34cb69;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+     /* tamanho da caixa - padrão da caixa - padding não estica mais a caixa*/
+     box-sizing: border-box;
+}
+
+html {
+    font-family: Roboto, sans-serif;
+}
+
+body {
+
+    background: #A1FFCE;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #A1FFCE, rgb(226, 231, 205)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+    
+    
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--title-color);
+    font-family: Ubuntu, sans-serif;
+}
+
+/* BOX MODEL
+
+Modelo de caixa 
+Toda caixa tem 
+largura, altura, espaçamentos, preenchimentos,
+borda, cor, fundo, maneira que é vista pelo html (display),
+posicionamento, alinhamento...
+
+*/
+
+
+
