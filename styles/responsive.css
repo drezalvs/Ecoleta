@@ -11,9 +11,12 @@
     #page-home header a {
         width: 80%;
         position: absolute;
-        bottom: 15px;
+        bottom: 0%;
         left: 50%;
-        transform: translateX(-50%)
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
     }
 
@@ -33,6 +36,9 @@
     #page-home main a {
        width: 80%;
        font-size: 13px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
     }
 
     #page-search-results .cards {
