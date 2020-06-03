@@ -6,7 +6,7 @@
 }
 
 #page-create-point header {
-    margin-top: 48px;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,7 +24,7 @@
     background-image: url('../assets/arrow-left.svg');
     display: flex;
     width: 20px;
-    height: 24px;
+    height: 20px;
 }
 
 form {
@@ -35,13 +35,13 @@ form {
     border-radius: 8px;
     /*espaçamento */
     margin: 80px auto;
-    margin-top: 80px;
     /*maxima largura */
     max-width: 730px;
+    box-sizing: border-box;
    
 }
 
-form h {
+form h1 {
     font-size: 36px;
 }
 
@@ -63,7 +63,7 @@ form .field {
     display: flex;
     flex-direction: column;
     margin-bottom: 24px;
-    margin: 0px 0px 24px 24px;
+    
 }
 
 form .field-group {
@@ -112,4 +112,51 @@ form button {
 
 form button:hover {
     background-color: #2fb86e;
+}
+
+.items-grid {
+    /*grid*/
+    display: grid;
+    /*colunas no grid, fr= fração, ele se ajusta deixando os itens em 3 colunas*/
+    grid-template-columns: 1fr 1fr 1fr;
+    /* espaçamento para o grid entre elementos chamado gap*/
+    gap: 16px;
+}
+
+.items-grid li {
+    background-color: #f5f5f5;
+    /* tira a bolinha */
+    list-style: none;
+    border: 2px solid #f5f5f5;
+    border-radius: 8px;
+    height: 180px;
+    padding: 32px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    /*alinha os itens ao centro */
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+}
+
+.items-grid li span {
+    /*para ele tenha um tamanho que preencha sozinho*/
+    flex: 1;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    color: var(--title-color);
+
+}
+
+.items-grid li.selected {
+    background-color: #e1faec;
+    border: 3px solid #34cb79;
+}
+
+.items-grid li img,
+.items-grid li span {
+/*não deixa o evento de clique acontecer */
+pointer-events: none;
 }
