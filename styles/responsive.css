@@ -1,6 +1,7 @@
 @media (max-width: 900px) {
     #page-home {
         background-position-x: 70vw;
+        background-position-y: 100%;
     }
 
     #page-home .content {
@@ -11,7 +12,7 @@
     #page-home header a {
         width: 80%;
         position: absolute;
-        bottom: 0%;
+        bottom: 5%;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
@@ -19,6 +20,7 @@
         align-items: center;
 
     }
+
 
     #page-home main {
         align-items: center;
