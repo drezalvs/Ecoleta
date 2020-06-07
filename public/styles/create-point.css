@@ -52,6 +52,16 @@ form fieldset {
 
 form legend {
     margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+form legend span {
+    font-size: 14px;
+    color: var(--primary-color)
 }
 
 form legend h2 {

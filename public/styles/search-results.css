@@ -72,6 +72,8 @@ main .card p {
     color: rgb(91, 91, 100);
 }
 
+
+
 body::after { /*pseudo elemento criado pelo css */
     content: "";
     position: fixed;

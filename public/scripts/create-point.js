@@ -46,6 +46,8 @@ document
     .querySelector("select[name=uf]")
     .addEventListener("change", getCities)
 
+
+
     // items de coleta
     // pegar todos os li's
     const itemsToCollect = document.querySelectorAll(".items-grid li")
@@ -72,6 +74,8 @@ document
    
     //dataset.id coloca só os numeros
     const itemId = itemLi.dataset.id
+
+    console.log('ITEM ID: ', itemId)
 
 
     // verificar se existem itens selecionados, se sim
@@ -103,6 +107,7 @@ document
     selectedItems.push(itemId)
     }
 
+    //console.log('selectedItems: ', selectedItems)
     // atualizar o campo escondido com os itens selecionados
     // código de atualizar , mas está la em cima const collectedItems = document.querySelector("input[name=items]")
 
